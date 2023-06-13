@@ -1,0 +1,380 @@
+$zloty: #e8bf5d;
+$szary_ale_lepszy: rgb(51, 51, 51);
+$czarny_ale_lepszy: #111111;
+
+*{
+    margin: 0 auto;
+    
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    width: 100vw;
+    height: 11vh;
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap;
+}
+
+.left_block{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
+}
+
+
+
+.right_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.elem_nav{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    color: $szary_ale_lepszy;
+}
+
+.elem_nav:hover{
+    border-bottom: 0.5vh solid $zloty;
+    border-top: 0.5vh solid white;
+} 
+
+#naglowek{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.suaerez{ 
+    height: 85vh;
+    width: 100vw;
+
+    
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    
+    background-image: url('../graphics/szawel_dobryczlowiek.png');
+    box-shadow: inset -1px -200px 329px 0px rgba(0,0,0,1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 750px) {
+    .body {
+        width: 100vh;
+    }
+}
+
+.suaerez_info{
+    color: white;
+    padding-bottom: 8rem;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.suaerez_info_left{
+    border-left: 0.5vh solid $zloty;
+    padding-left: 1rem;
+    margin-right: 8rem;
+    h1{
+        font-size: 350%;
+    }
+    h3{
+        font-size: 200%;
+    }
+}
+
+
+.suaerez_info_right{
+    margin-left: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $zloty;
+    border-radius: 40px;
+    width: 6rem;
+    height: 5.5vh;
+
+    a{
+        color: $szary_ale_lepszy;
+        text-decoration: none;
+    }
+}
+
+.about_us{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.about_us_welcome{
+    justify-content: flex-start;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+
+    p{
+        color: $szary_ale_lepszy;
+    }
+}
+
+.about_us_desc{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: flex-end;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.history_header{
+    margin: 1rem;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.expertise_header{
+    margin: 1rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.daty{
+    display: flex;
+    justify-content: flex-start;
+    font-family: 'Poppins', sans-serif;
+}
+
+.dates{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: 1rem;
+}
+
+.dates_desc{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    p{
+        color: $szary_ale_lepszy;
+    }
+    
+}
+
+
+.history{
+    width: 30vw;
+}
+
+.expertise{
+    width: 30vw;
+}
+
+.expertise_desc{
+    color: $szary_ale_lepszy;
+    font-size: 75%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2rem;
+}
+
+.practis_area{
+    background-color: $czarny_ale_lepszy;
+    color: white;
+}
+
+.practis_area_header{
+    justify-content: flex-start;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+}
+
+.practis_area_bloki{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.practis_area_blok{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.practis_area_blok_naglowek{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 115%;
+    white-space: nowrap;
+    width: 15vw;
+    font-family: 'Playfair Display', serif;
+    p{
+        padding-bottom: 0.7rem;
+    }
+}
+
+.meet_our{
+}
+
+.meet_our_naglowek{
+    width: 58vw;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+}
+
+
+
+
+.meet_our_pracownicy{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.meet_our_pracownik{
+    margin: 1rem;
+}
+
+.meet_our_pracownicy_opis{
+    margin-top: 1.5rem;
+}
+
+
+
+.clients{
+    height: 65vh;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    background-blend-mode: multiply;
+    background-image: url('../graphics/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clients_naglowek{
+    width: 58vw;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+}
+
+.clients_tresc{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.clients_tresc_left{
+    margin-right: 2rem;
+}
+
+.clients_tresc_right{
+
+    margin-left: 2rem;
+    p{
+        margin-top: 1rem;
+    }
+}
+
+.blog_naglowek{
+    width: 58vw;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+}
+
+
+footer{
+    color: white;
+    background-color: $czarny_ale_lepszy;
+}
+
+#stopka{
+    color: #b5b5b5;
+}
+
+.faq{
+    color: white;
+    background-color: $czarny_ale_lepszy;
+}
+
+.faq_naglowek{
+    width: 58vw;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-left: 0.5vh solid $zloty;
+    padding-left: 0.5rem;
+}
+
+.faq_tresc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.faq_tresc_lewy{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.faq_tresc_lewy_element{
+    width: 30vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.faq_tresc_prawy{
+    width: 25vw;
+    display: flex;
+    justify-content: flex-end;
+    background-color: $zloty;
+    color: $czarny_ale_lepszy;
+    padding: 1rem 1.5rem;
+}
+
+
+
+
+
+
+
+
+
